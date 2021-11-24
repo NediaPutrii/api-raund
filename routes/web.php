@@ -18,7 +18,7 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/travelagent', function () use ($router) {
-    $results = app('db')->select("SELECT * FROM tarvel_agent");
+    $results = app('db')->select("SELECT * FROM travel_agent");
     return response()->json($results);
 });
 
